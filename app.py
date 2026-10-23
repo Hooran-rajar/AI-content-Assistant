@@ -96,11 +96,11 @@ if submitted:
             """
 
             with st.spinner("Generating your content..."):
-                chat_completion = client.chat.completions.create(
-                    messages=[{"role": "user", "content": prompt}],
-                    model="llama-3.3-70b-versatile",  # Updated to the correct active model
-                    temperature=0.7,
-                )
+              chat_completion = client.chat.completions.create(
+    messages=[{"role": "user", "content": prompt}],
+    model="llama3-8b-8192",  # Universal active Groq model
+    temperature=0.7,
+)
 
                 result = chat_completion.choices[0].message.content
 
