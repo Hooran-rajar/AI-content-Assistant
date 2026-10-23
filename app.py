@@ -22,7 +22,7 @@ api_key_input = st.sidebar.text_input(
 )
 
 # Fallback to environment variables if available
-api_key = api_key_input or os.environ.get("Grok-Api-Key")
+api_key = api_key_input or os.environ.get("GROQ_API_KEY")
 
 # Input Form
 with st.form("content_form"):
