@@ -98,7 +98,7 @@ if submitted:
             with st.spinner("Generating your content..."):
                 chat_completion = client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
-                    model="llama-3.3-70b-versatile",  # Official active production model from docs
+                    model="openai/gpt-oss-20b",  # Using the active model from your official docs list
                     temperature=0.7,
                 )
 
