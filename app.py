@@ -96,9 +96,10 @@ if submitted:
             """
 
             with st.spinner("Generating your content..."):
+                # Using the latest active Llama model on Groq
                 chat_completion = client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
-                    model="gemma2-9b-it",  # Stable Gemma model on Groq
+                    model="llama-3.1-8b-instant",
                     temperature=0.7,
                 )
 
