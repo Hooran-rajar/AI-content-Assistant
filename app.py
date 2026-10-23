@@ -97,7 +97,7 @@ if submitted:
       with st.spinner("Generating your content..."):
         chat_completion = client.chat.completions.create(
             messages=[{"role": "user", "content": prompt}],
-            model="llama-3.3-70b-instant",  # Free, fast Groq model
+            model="llama-3.1-70b-instant",  # Free, fast Groq model
             temperature=0.7,
         )
 
