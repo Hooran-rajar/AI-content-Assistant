@@ -96,10 +96,10 @@ if submitted:
             """
 
             with st.spinner("Generating your content..."):
-                # Using the latest active Llama model on Groq
+                # Using Mixtral model which is extremely stable on Groq
                 chat_completion = client.chat.completions.create(
                     messages=[{"role": "user", "content": prompt}],
-                    model="llama-3.1-8b-instant",
+                    model="mixtral-8x7b-32768",
                     temperature=0.7,
                 )
 
